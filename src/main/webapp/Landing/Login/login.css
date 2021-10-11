@@ -1,0 +1,135 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+/* .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+} */
+
+.login_close_btn_x {
+    position: relative;
+}
+
+.login_img_container {
+    display:flex;
+    /* text-align: center; */
+    /* margin: 24px 0 12px 0; */
+    position: relative;
+}
+.login_img_container_header {
+    flex: 50%;
+    width: 100%;
+    padding: 20px;
+    float: left;
+
+}
+.login_img_container_image {
+    flex: 50%;
+    width: 100%;
+    padding: 20px;
+    
+}
+img.login_fitbot_logo {
+    float: right;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.login_detail_container {
+  padding: 16px;
+}
+
+span.login_cancel_btn {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login_modal {
+  display: block;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 75%; 
+  height: 75%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding: 60px;
+}
+
+/* Modal Content/Box */
+.login_modal_content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.login_close_btn {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.login_close_btn:hover, .login_close_btn:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.login_animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.login_forgot_password {
+        display: block;
+        float: none;
+    }
+    .login_cancel_btn {
+        width: 100%;
+    }
+}

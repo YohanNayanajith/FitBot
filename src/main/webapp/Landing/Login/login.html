@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Login/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+    
+    <div id="fitbot_login_modal" class="login_modal">
+        <form class="login_modal_content login_animate" action="#" method="post">
+            <div class="login_close_btn_x">
+                <span onclick="close_model()" class="login_close_btn" title="Close Modal">&times;</span>
+            </div>
+            <div class="login_img_container">
+                <div class="login_img_container_header">
+                    <h1>Login</h1>
+                </div>
+                <div class="login_img_container_image">
+                    <img src="../Images/Fitbot_logo.png" alt="Logo" class="login_fitbot_logo">
+                </div>
+                
+            </div>
+            <div class="login_header">
+                <h1>Welcome back! Log In with your Email or User Name Log in to your account</h1>
+            </div>
+      
+            <div class="login_detail_container">
+                <label for="login_username"><b>Email address or User name</b></label>
+                <input type="text" placeholder="Enter Username or Email" name="login_username" required>
+      
+                <label for="login_password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="login_password" required>
+              
+                
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                <button type="login_submit">Login</button>
+            </div>
+      
+            <div class="login_detail_container" style="background-color:#f1f1f1">
+                <button type="button" onclick="login_cancel()" class="login_cancel_btn">Cancel</button>
+                <span class="login_forgot_password"><a href="#">Forgot password?</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../Login/login.js"></script>
+</html>
